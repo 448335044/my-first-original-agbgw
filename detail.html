@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reserve.css"/>
+    <link rel="stylesheet" href="css/person.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/detail.css"/>
+    <title>Document</title>
+    <style>
+        .orig,.fd{
+            width: 200px;
+            height: 200px;
+            border:1px solid red;
+            position: absolute;
+        }
+        .fd{
+
+            left:200px;
+            top:30px;
+            overflow: hidden;
+            display: none;
+        }
+
+        .blocks{
+            /*小图的宽高比例
+                窗口的宽度 / 大图的宽度 * 窗口的宽度
+            */
+            width:60px;
+            height:60px;
+            background:rgba(254,238,167,.4);
+            position: absolute;
+            left: 0;
+            top:0;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="detail" style="width: 100%;height: 800px;">
+    <!--固定导航-->
+    <div class="top" id="top_hidd" style="height:60px;position: fixed;background-color: #1e78e7;z-index:999 ;">
+        <div class="text container">
+            <!--logo-->
+            <div class="top_left fl">
+                <img src="images/logo.png" alt="" style="width: 100%;height: 100%;"/>
+            </div>
+            <!--导航-->
+            <div class="top_midd fl">
+                <ul class="navv">
+                    <li class="flli"><a href="indexRoot.html">主页 <span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="flli pill" ><a href="javascript:;">商品分类 <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                        <ul>
+                            <li><a class="electron_one"  href="javascript:;">特惠专区</a></li>
+                            <li><a class="electron_two"  href="javascript:;">电子产品</a></li>
+                            <li><a class="electron_tree" href="javascript:;">生活用品</a></li>
+                            <li><a class="electron_fore" href="javascript:;">小吃零食</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="flli"><a href="person.html">个人中心 <span class="glyphicon glyphicon-user"></span></a></li>
+                    <li class="flli"><a href="reserve.html">帮助中心 <span class="glyphicon glyphicon-cloud"></span></a></li>
+                    <li class="flli"><a href="index.html">安全退出 <span class="glyphicon glyphicon-off"></span></a></li>
+                </ul>
+            </div>
+            <!--登录注册-->
+            <div class="top_right fr">
+                <div class="ser_box">
+                    <p><span><a href="index.html">登录</a></span> | <span><a href="index.html">注册</a></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--中间内容区-->
+    <div class="text " style="height:700px;width:100%;margin:0 auto;padding-top: 50px;">
+        <div class="container" style="background-color: #cde9f5;height: 600px;">
+            <!--购物车内容区-->
+            <div class="container" >
+                <h4><span>生活用品</span> > <span>裙子</span></h4>
+                <!--上面-->
+                <div class="detail_top">
+                    <!--左侧放大镜图片-->
+                    <div class="img_intro">
+                        <!-- 建立显示原图窗口 -->
+                        <div class="orig" id="windowss">
+                            <!-- 插入要放大的图片 -->
+                            <img  src="images/qunzi1.jpg" alt=""  style="width: 100%;height: 100%;">
+
+                            <!-- 加入用于锁定放大区域的小框框 -->
+                            <div class="blocks"></div>
+                        </div>
+                        <!-- 建立显示放大图片的窗口 -->
+                        <div class="fd" id="windowsss">
+                            <img src="images/qunzi1.jpg" alt="" style="position: absolute;width: 280%;height: 280%" >
+                        </div>
+
+
+                    </div>
+                    <!--详细信息-->
+                    <div class="text_intro">
+                         <div style="font-size: 20px;"><p>新款2019韩版显瘦高腰百搭裙</p></div>
+                         <div><p><span>原价 :</span><span>198</span></p></div>
+                         <div><p><span>促销 :</span><span>128</span></p></div>
+                         <div><p><span>送到 :</span><span>广东.深圳</span></p></div>
+                         <div><p><span>选择颜色 :</span><span>白色</span></p></div>
+                         <div><p><span>选择尺寸 :</span><span>M码</span></p></div>
+                        <div class="buy_tom">
+                            <p><button onclick="alert('对不起亲爱的！赞不支持')">购买</button><button onclick="window.location.href = 'shop_cart.html'">加入购物车</button></p>
+                            <p>温馨提示·支持7天无理由退货</p>
+                        </div>
+                    </div>
+                    <div class="ximg" id="ximg">
+                        <img class="img" src="images/qunzi1.jpg" alt="" style="height: 80px;width: 33.333%;
+    "/>
+                        <img class="img" src="images/qunzi2.jpg" alt="" style="height: 80px;width: 33.333%;
+    "/>
+                        <img class="img" src="images/qunzi3.jpg" alt="" style="height: 80px;width: 33.333%;
+    "/>
+                    </div>
+                </div>
+                <!--下面-->
+                <div class="detail_mid">
+                    <ul class="ulimp">
+                        <li class="liimp" id="intro">商品介绍</li>
+                        <li class="liimp" id="size">规格参数</li>
+                        <li class="liimp" id="reserve">售后保障</li>
+                        <li class="liimp" id="comment">商品评价</li>
+                    </ul>
+                    <!--介绍板块-->
+                    <div class="intro">
+                        <p>品牌: LOGOYOYO</p>
+                        <p>商品名称:新款2019韩版显瘦高腰百搭裙</p>
+                        <p>商品编号:100000109701</p>
+                        <p>商品产地:广东，深圳</p>
+                    </div>
+                    <!--规格板块-->
+                    <div class="size" style="display: none;">
+                        <p>尺寸：L,S,M</p>
+                        <p>颜色种类:白色，粉色，黑色</p>
+                    </div>
+                    <!--售后板块-->
+                    <div class="reserve" style="display: none;">
+                        <p>我们承诺</p>
+                        <p>平台卖家销售并发货的商品，由平台卖家提供发票和相应的售后服务。请您放心购买！</p>
+                        <p>正品行货 </p>
+                        <p>我们向您保证所售商品均为正品行货，自营商品开具机打发票或电子发票。</p>
+                        <p>注：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！ </p>
+
+                    </div>
+                    <!--评论板块-->
+                    <div class="comment" style="display: none;">
+                        <p>商品评价</p>
+                        <ul class="list">
+                            <li>全部评价(<span>0</span>)</li>
+                            <li>好评(<span>0</span>)</li>
+                            <li>中评(<span>0</span>)</li>
+                            <li>差评(<span>0</span>)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer部分-->
+    <!--footer部分-->
+    <div class="copyright container" style="background-color: rgba(0, 0, 0, 0.7);color: #fff; width: 100%;margin:0 auto;text-align: center;font-size: 20px;position:absolute;top: 760px;">
+        <p>个人版权® </p>
+        <p><span><a style="color: #FFFFFF;" href="">帮助</a></span> | <span><a style="color: #FFFFFF;" href="">用户反馈</a></span></p>
+        <p>请联系我：17167101167</p>
+        <p>qq邮箱：448335044@qq.com</p>
+    </div>
+</div>
+
+<script>
+    /*var $windowss = $("#windowss img");
+    var $windowsss = $("#windowsss img");
+    console.log($windowss[0]);*/
+    var windows = document.getElementById("windowss").getElementsByTagName("img");
+    var windowss = document.getElementById("windowsss").getElementsByTagName("img");
+    console.log(windows[0].src);
+    var ximg = document.getElementById("ximg").getElementsByTagName("img");
+    for(var i=0;i<ximg.length;i++){
+        ximg[i].onclick = function () {
+            windowss[0].src = windows[0].src = this.src;
+          /* /!* console.log(this.src);*!/
+           /!* windows.setAttribute("src",this.src);*!/
+            console.log($windowss[0].src);
+           /!* $windowss[0].attr("src",this.src);*!/
+            $windowsss[0].src = $windowss[0].src = this.src;*/
+        };
+
+    }
+</script>
+
+<!--footer部分-->
+<script>
+    /*下拉菜单*/
+    $(document).ready(function(){
+        $(function(){
+            $('.pill').hover(function(e) {
+                $(this).children().stop().slideToggle()
+            });
+        })
+    });
+</script>
+<!--介绍-->
+<script>
+    $('#size').click(function(){
+        $('.intro').fadeOut();
+        $('.reserve').fadeOut();
+        $('.comment').fadeOut();
+        $('.size').fadeIn();
+    });
+    $('#intro').click(function(){
+        $('.size').fadeOut();
+        $('.reserve').fadeOut();
+        $('.comment').fadeOut();
+        $('.intro').fadeIn();
+    });
+    $('#reserve').click(function(){
+        $('.intro').fadeOut();
+        $('.size').fadeOut();
+        $('.comment').fadeOut();
+        $('.reserve').fadeIn();
+    });
+    $('#comment').click(function(){
+        $('.intro').fadeOut();
+        $('.size').fadeOut();
+        $('.reserve').fadeOut();
+        $('.comment').fadeIn();
+    })
+</script>
+<!--<script>
+    var ulLi = document.getElementById("pointer").getElementsByTagName('li');
+    var tran=document.getElementById('b');
+    for (var i = 0; i < ulLi.length; i++) {
+        ulLi[i].onmouseover = function () {
+            for (var i = 0; i < ulLi.length; i++) {
+                if (ulLi[i] === this) {
+                    tran.style.marginTop=ulLi[i].offsetTop+0+'px';
+                }
+            }
+        }
+    }
+</script>-->
+
+<script src='js/jquery.min.js'></script>
+<script  src="js/main.js"></script>
+<script>
+    // 绑定鼠标移入原图窗口事件
+    $('.orig').mouseover(function(e){
+        $('.fd').css('display','block');
+        $('.blocks').css('display','block');
+
+    })
+    //绑定鼠标在原图窗口移动的事件
+    $('.orig').mousemove(function(e){
+
+        // 获取鼠标当前的位置
+        var x=e.clientX;
+        var y=e.clientY;
+        // 获取原图窗口距离文档的偏移位置
+        var sX=$('.orig').offset().left;
+        var sY=$('.orig').offset().top;
+
+        // 计算鼠标的相对位置（相对于原图窗口的偏移距离）
+        var mx=x-sX;
+        var my=y-sY;
+
+        // 获取小框框的宽高
+        var mw=$('.blocks').width()/2;
+        var mh=$('.blocks').height()/2;
+
+        // 鼠标移动后小框框的移动距离
+        $('.blocks').css({left:mx-mw+'px',top:my-mh+'px'});
+
+        // 获取小框框的偏移位置
+        var lw=$('.blocks').position().left;
+        var lh=$('.blocks').position().top;
+
+
+        // 判断边界（小框框只能在原图窗口范围内移动）
+        var maxW=$('.orig').width()-$('.blocks').width()
+        var maxH=$('.orig').height()-$('.blocks').height()
+        // 左边界
+        if(lw<=0){$('.blocks').css('left','0px');}
+        // 右边界
+        if(lw>=maxW){
+            $('.blocks').css('left',maxW+'px');
+        }
+        // 上边界
+        if(lh<=0){$('.blocks').css('top','0px');}
+        // 下边界
+        if(lh>=maxH){
+            $('.blocks').css('top',maxH+'px');
+        }
+
+        // 获取小框框的偏移位置
+        var lw=$('.blocks').position().left;
+        var lh=$('.blocks').position().top;
+        // 计算鼠标在小图里的位置  *2.5计算大图移动的比例
+        var newX=lw*2.5;
+        var newY=lh*2.5;
+
+
+
+        $('.fd img').css({left:-newX+'px',top:-newY+'px'});
+    })
+    //绑定鼠标离开原图窗口事件
+    $('.orig').mouseout(function(){
+        $('.fd').css('display','none');
+        $('.blocks').css('display','none');
+    })
+</script>
+
+</body>
+</html>

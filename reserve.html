@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reserve.css"/>
+   <!-- <link rel="stylesheet" href="css/indexRoot.css"/>-->
+
+    <link rel="stylesheet" href="css/person.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+<div style="width: 100%;height: 800px;">
+    <!--固定导航-->
+    <div class="top" id="top_hidd" style="height:60px;position: fixed;background-color: #1e78e7;z-index:999 ;">
+        <div class="text container">
+            <!--logo-->
+            <div class="top_left fl">
+                <img src="images/logo.png" alt="" style="width: 100%;height: 100%;"/>
+            </div>
+            <!--导航-->
+            <div class="top_midd fl">
+                <ul class="navv">
+                    <li class="flli"><a href="indexRoot.html">主页 <span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="flli" ><a href="goods.html">更多商品 <span class="glyphicon glyphicon-gift"></span></a></li>
+                    <li class="flli"><a href="person.html">个人中心 <span class="glyphicon glyphicon-user"></span></a></li>
+                    <li class="flli"><a href="reserve.html">帮助中心 <span class="glyphicon glyphicon-cloud"></span></a></li>
+                    <li class="flli"><a href="index.html">安全退出 <span class="glyphicon glyphicon-off"></span></a></li>
+                </ul>
+            </div>
+            <!--登录注册-->
+            <div class="top_right fr">
+                <div class="ser_box">
+                    <p><span><a href="index.html">登录</a></span> | <span><a href="index.html">注册</a></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--中间内容区-->
+    <div class="center " style="height:600px;width:100%;margin:0 auto;position: absolute;top:60px;">
+        <div class="container" style="background-color: #cde9f5;height: 600px;">
+            <!--修改个人资料内容-->
+            <!--消息内容区-->
+
+
+                <!--左侧搜索与帮助导航-->
+
+                        <h2>帮助中心</h2>
+
+
+
+
+                <!--右侧搜索与帮助-->
+
+                    <div class="center-text">
+                        <div class="form">
+                            <input type="text" id="kewword" placeholder="热门关键词：手机 订单 会员"/>
+                            <button type="button" id="reserch">搜索</button>
+                        </div>
+                        <div class="list" id="list">
+                            <div class="row">
+                                <div class="col-md-6 hideeLeft">
+                                    <h4>热门问题</h4>
+                                    <div class="traverse" id="traverse">
+                                        <div id="list-top">
+                                            <p>1. <a href="#"></a></p>
+                                            <p>2. <a href="#"></a></p>
+                                            <p>3. <a href="#"></a></p>
+                                            <p>4. <a href="#"></a></p>
+                                        </div>
+                                        <div id="list-button" style="display: none">
+                                            <p>5. <a href="#"></a></p>
+                                            <p>6. <a href="#"></a></p>
+                                            <p>7. <a href="#"></a></p>
+                                            <p>8.<a href="#"></a></p>
+                                            <p>9.<a href="#"></a></p>
+                                            <p>10.<a href="#"></a></p>
+                                            <div class="glyphicon glyphicon-arrow-left return">
+                                                <button style="outline:none;background-color:#cde9f5;position:absolute;left:30px;" onclick="window.location.href = 'reserve.html'">返回</button>
+                                                <!--<a href="reserveTextNew.html">返回</a>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5><a href="#" class="more hidee">了解更多>></a></h5>
+
+                                </div>
+                                <div class="col-md-6 hidee">
+                                    <h4>最新问题</h4>
+                                    <div id="traversenew">
+                                        <div id="list-top-right">
+                                            <p>1. <a  href="#"></a></p>
+                                            <p>2. <a href="#"></a></p>
+                                            <p>3. <a href="#"></a></p>
+                                            <p>4. <a href="#"></a></p>
+                                        </div>
+                                        <div id="list-button-right" style="display: none">
+                                            <p>5. <a href="#"></a></p>
+                                            <p>6. <a href="#"></a></p>
+                                            <p>7. <a href="#"></a></p>
+                                            <p>8. <a href="#"></a></p>
+                                            <p>9. <a href="#"></a></p>
+                                            <p>10. <a href="#"></a></p>
+                                            <div class="glyphicon glyphicon-arrow-left return">
+                                                <button  style="outline:none; background-color:#cde9f5;position:absolute;left:30px;" onclick="window.location.href = 'reserve.html'">返回</button>
+                                                <!--<a href="reserveTextNew.html">返回</a>-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5><a href="#" class="moreRight hideeRight">了解更多>></a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!--热门问题更多-->
+                        <!--<div class="list" id="moreList" style="display:none">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <h4>热门问题</h4>
+                                    <p>1. <a href="#">hellow model llow mode</a></p>
+                                    <p>2. <a href="#">hellow model llow modekjkj</a></p>
+                                    <p>3. <a href="#">hellow model llow mode</a></p>
+                                    <p>4. <a href="#">hellow model llow</a></p>
+                                    <p>5. <a href="#">hellow model llow modebbbjbyjb</a></p>
+                                    <p>6. <a href="#">hellow modemode</a></p>
+                                    <p>7. <a href="#">hellow model llow mode</a></p>
+                                    <p>8. <a href="#">hellow modemode</a></p>
+                                    <p>9. <a href="#">hellow model llow mode</a></p>
+                                    <p>10. <a href="#">hellow model llow mode</a></p>
+                                </div>
+                                <div class="col-md-5">
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--搜索出的内容-->
+                        <div class="reserch-text" id="intro" style="display: none"> <!--style="display: none"-->
+                            <!-- <p id="number"></p>
+                             <p>1.<a href="">adeffaega</a></p>
+                             <p>2.<a href="">hghgh</a></p>
+                             <p>3.<a href="">gjhgk</a></p>
+                             <p>4.<a href="">hgvjhgvk</a></p>
+                             <p>5.<a href="">ghvkk</a></p>-->
+                            <h4 id="introText">帮助首页> <a class="intro"  id="number"></a></h4>
+                            <h3 style="color:#1e78e7;position: relative;margin-top: 50px;margin-bottom: 100px;"><p>亲:</p>
+                                <p>由于版本升级，系统内部有做调整。请联系我方技术支持。</p>
+                                <p>联系电话: 17167101167</p>
+                                <p class="tail" style="position: absolute;left: 57%;">谢谢！</p>
+                            </h3>
+                            <div id="listsss">
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                            </div>
+                            <div class="glyphicon glyphicon-arrow-left return">
+                                <a href="reserve.html">返回</a>
+                            </div>
+                        </div>
+                    </div>
+
+                <!--<div class="col-md-9">
+                    <div class="center-text">
+                        <div class="form">
+                            <input type="text" id="kewword" placeholder="热门关键词：养生 定位 健康 和睦"/>
+                            <button type="button" id="reserch">搜索</button>
+                        </div>
+                        <div class="list" id="list".>
+                            <div class="row">
+                                <div class="col-md-5 hideeLeft">
+                                    <h4>热门问题</h4>
+                                    <div class="traverse" id="traverse">
+                                        <div id="list-top">
+                                            <p>1. <a href="#"></a></p>
+                                            <p>2. <a href="#"></a></p>
+                                            <p>3. <a href="#"></a></p>
+                                            <p>4. <a href="#"></a></p>
+                                            <p>5. <a href="#"></a></p>
+                                            <p>6. <a href="#"></a></p>
+                                            <p>7. <a href="#"></a></p>
+                                        </div>
+                                        <div id="list-button" style="display: none">
+                                            <p>8.<a href="#"></a></p>
+                                            <p>9.<a href="#"></a></p>
+                                            <p>10.<a href="#"></a></p>
+                                            <div class="glyphicon glyphicon-arrow-left return">
+                                                <button style="outline:none;background-color:#fff;position:absolute;left:30px;" onclick="window.location.href = 'reserve.html'">返回</button>
+                                                &lt;!&ndash;<a href="reserveTextNew.html">返回</a>&ndash;&gt;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5><a href="#" class="more hidee">了解更多>></a></h5>
+
+                                </div>
+                                <div class="col-md-5 hidee">
+                                    <h4>最新问题</h4>
+                                    <div id="traversenew">
+                                        <div id="list-top-right">
+                                            <p>1. <a  href="#"></a></p>
+                                            <p>2. <a href="#"></a></p>
+                                            <p>3. <a href="#"></a></p>
+                                            <p>4. <a href="#"></a></p>
+                                            <p>5. <a href="#"></a></p>
+                                            <p>6. <a href="#"></a></p>
+                                            <p>7. <a href="#"></a></p>
+                                            <p>8. <a href="#"></a></p>
+                                            <p>9. <a href="#"></a></p>
+                                        </div>
+                                        <div id="list-button-right" style="display: none">
+                                            <p>10. <a href="#"></a></p>
+                                            <div class="glyphicon glyphicon-arrow-left return">
+                                                <button  style="outline:none; background-color:#fff;position:absolute;left:30px;" onclick="window.location.href = 'reserve.html'">返回</button>
+                                                &lt;!&ndash;<a href="reserveTextNew.html">返回</a>&ndash;&gt;
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5><a href="#" class="moreRight hideeRight">了解更多>></a></h5>
+
+                                </div>
+                            </div>
+                        </div>
+                        &lt;!&ndash;搜索出的内容&ndash;&gt;
+                        <div class="reserch-text" id="intro" style="display: none"> &lt;!&ndash;style="display: none"&ndash;&gt;
+                            &lt;!&ndash; <p id="number"></p>
+                             <p>1.<a href="">adeffaega</a></p>
+                             <p>2.<a href="">hghgh</a></p>
+                             <p>3.<a href="">gjhgk</a></p>
+                             <p>4.<a href="">hgvjhgvk</a></p>
+                             <p>5.<a href="">ghvkk</a></p>&ndash;&gt;
+                            <h4 id="introText">帮助首页> <a class="intro"  id="number"></a></h4>
+                            &lt;!&ndash;技术支持&ndash;&gt;
+                            <h3 style="color:#1e78e7;position: relative;margin-top: 50px;margin-bottom: 100px;"><p>亲:</p>
+                                <p>由于版本升级，系统内部有做调整。请联系我方技术支持。</p>
+                                <p>联系电话: 0755—6666888</p>
+                                <p class="tail" style="position: absolute;left: 57%;">谢谢！</p>
+                            </h3>
+                            <div id="listsss">
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                                <p><a href="#"></a></p>
+                            </div>
+                            <div class="glyphicon glyphicon-arrow-left return">
+                                <a href="reserve.html">返回</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+
+
+        </div>
+
+        <!--footer部分-->
+        <div class="copyright container" style="background-color: rgba(0, 0, 0, 0.7);color: #fff; width: 100%;margin:0 auto;text-align: center;font-size: 20px;position:absolute;top: 720px;">
+            <p>个人版权® </p>
+            <p><span><a style="color: #FFFFFF;" href="">帮助</a></span> | <span><a style="color: #FFFFFF;" href="">用户反馈</a></span></p>
+            <p>请联系我：17167101167</p>
+            <p>qq邮箱：448335044@qq.com</p>
+        </div>
+    </div>
+</div>
+<!--footer部分-->
+
+<script>
+    /*下拉菜单*/
+    $(document).ready(function(){
+$(function(){
+$('.pill').hover(function(e) {
+$(this).children().stop().slideToggle()
+});
+})
+});
+</script>
+<script>
+   /* var ulLi = document.getElementsByTagName('ul')[1].getElementsByTagName('li');
+    var tran=document.getElementById('b');
+    for (var i = 0; i < ulLi.length; i++) {
+        ulLi[i].onmouseover = function () {
+            for (var i = 0; i < ulLi.length; i++) {
+                if (ulLi[i] === this) {
+                    /!*90*!/
+                    tran.style.marginTop=ulLi[i].offsetTop-90+'px';
+                }
+            }
+        }
+    }*/
+    /*显示帮助数据*/
+    /*热门问题数组*/
+    var list = new Array;
+    list = ["注册最佳方法？","为何查不到两个月之前的订单？","消息出现无法发送或发送延迟怎么办？","如何禁言群成员？","苹果手机iOS系统没有提示音怎么办？","登录时提示被踢下线怎么办？","退出账号后依然收到消息怎么办？","出现卡顿或黑屏问题怎么办？","定位不准/失败的处理方法？","给购友发送商品链接的操作方法"];
+    /*console.log(list);*/
+    /*找所有的a*/
+    var linka = document.getElementById("traverse").getElementsByTagName("a");
+    for(var i=0; i<linka.length;i++){
+        linka[i].text = list[i];
+    }
+
+    /*为所有的a绑定点击事件*/
+    for(var i=0; i<linka.length; i++){
+        linka[i].onclick = function(){
+            /*获取点击a里面的内容*/
+            /*var vue = this.text;
+             console.log(vue);*/
+            /*只显示搜索出来的内容*/
+            var listDisappear = document.getElementById("list").style.display = "none";
+            var introAccording = document.getElementById("intro").style.display = 'block';
+
+            /*找到要显示的地方*/
+            var introText = document.getElementById("number");
+            /*赋值到要显示的地方*/
+            introText.text = this.text;
+            /*var haha =introText.text;
+             console.log(haha);*/
+        };
+    }
+    /*最新问题数组*/
+    var listnew = new Array;
+    listnew = ["参加满减活动方法？","包邮退换货操作步骤？","使用购物券注意事项？","会员积分倍速增长方法？","发起群活动方法？","19年金牌代理商的名单有哪些？","久久没收到货怎么办？","删除好友的方法？","购物时资金不够怎么办？","收到的商品数量有多的怎么处理？"];
+    /*console.log(list);*/
+    /*找所有的a*/
+    var linka = document.getElementById("traversenew").getElementsByTagName("a");
+    for(var i=0; i<linka.length; i++){
+        linka[i].text = listnew[i];
+    }
+
+    /*为所有的a绑定点击事件*/
+    for(var i=0; i<linka.length; i++){
+        linka[i].onclick = function(){
+            /*获取点击a里面的内容*/
+            /*var vue = this.text;
+             console.log(vue);*/
+            /*只显示搜索出来的内容*/
+            var listDisappear = document.getElementById("list").style.display = "none";
+            var introAccording = document.getElementById("intro").style.display = 'block';
+
+            /*找到要显示的地方*/
+            var introText = document.getElementById("number");
+            /*赋值到要显示的地方*/
+            introText.text = this.text;
+            /*var haha =introText.text;
+             console.log(haha);*/
+        };
+    }
+    /* /!*获取输入的值*!/
+     var reserch = document.getElementById("reserch");
+     reserch.onclick = function(){
+     var kewword = document.getElementById("kewword");
+     var v = kewword.value;
+     console.log(v);
+     alert(v);
+     };*/
+    $(document).ready(function() {
+        /*更多内容切换*/
+        $(".more").click(function(){
+            $(".hidee").hide();
+            $("#list-button").show();
+        });
+        $(".moreRight").click(function(){
+            $(".hideeLeft").hide();
+            $(".hideeRight").hide();
+            $("#list-button-right").show();
+        });
+        /*绑定搜索按钮*/
+        $('#reserch').click(function () {
+            $(".list").hide();
+            $(".reserch-text").show();
+            /*联系技术支持*/
+            $("h3").hide();
+            /* 获取输入框的内容*/
+            var kewwordValue = $("#kewword").val();
+            /* alert(kewwordValue);*/
+            /*搜索出的数目*/
+            var reserch = document.getElementById("reserch");
+            var number = document.getElementById("number");
+            /* reserch.onclick = function () {
+             var list = document.getElementsByClassName("list")[0].style.display = 'none';
+             var reserchText = document.getElementsByClassName("reserch-text")[0].style.display = 'block';*/
+            /*动态数据*/
+
+            /*var strr = "共查询到"+666+"条包含\""+kewwordValue+"\"的搜索结果";
+             number.text = strr;*/
+
+            //字符串方法indexOf
+            /*总数组长*/
+            var arraccount = new Array;
+            arraccount = list.concat(listnew);
+            /* console.log(arraccount.length);*/
+
+            /*创建一个新数组装搜到的数据*/
+
+            var arrnew = [];
+            for(var i=0;i<arraccount.length;i++){
+                //如果字符串中不包含目标字符会返回-1
+                if(arraccount[i].indexOf(kewwordValue)>=0){
+                    arrnew.push(arraccount[i]);
+                }
+            }
+            var num = arrnew.length;
+            /* console.log(arrnew.length);*/
+            var strr = "共查询到 "+num+" 条包含\""+kewwordValue+"\"的搜索结果";
+            number.text = strr;
+            /*将数组里面的数据渲染到页面*/
+            var linkaaa = document.getElementById("listsss").getElementsByTagName("a");
+            /*console.log(arrnew[0]);
+             console.log(linkaaa[0].text);*/
+
+            /*把取到的数据渲染出来并附加序号*/
+            for(var i=0; i<arrnew.length; i++){
+                linkaaa[i].text = (i+1)+"."+arrnew[i];
+            }
+            /*判断，如果为空就不渲染*/
+            /*if(arrnew[0]){linkaaa[0].text = arrnew[0];}
+             */
+
+            /*渲染之后再点击进去看内容*/
+
+            /*找所有的a*/
+            var linkanew = document.getElementById("listsss").getElementsByTagName("a");
+            console.log(linkanew.length);
+
+
+            /*为所有查出来的a绑定点击事件*/
+            for(var i=0; i<linkanew.length; i++){
+                linkanew[i].onclick = function(){
+
+                    /* /!*获取点击a里面的内容*!/
+                     /!*var vue = this.text;
+                     console.log(vue);*!/
+                     /!*只显示搜索出来的内容*!/*/
+
+
+                    var listDisappear = document.getElementById("list").style.display = "none";
+                    var introAccording = document.getElementById("intro").style.display = 'block';
+                    /*添加技术支持*/
+                    document.getElementsByTagName("h3")[0].style.display = "block";
+                    /*/!*找到要显示的地方*!/*/
+                    var introText = document.getElementById("number");
+                    var introTexts = document.getElementById("listsss").style.display = "none";
+                    /*/!*赋值到要显示的地方*!/*/
+                    introText.text = this.text;
+
+                    /*   /!*var haha =introText.text;
+                     console.log(haha);*!/*/
+                };
+            }
+
+        });
+    });
+
+
+
+
+
+</script>
+</body>
+</html>

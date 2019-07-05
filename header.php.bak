@@ -1,0 +1,80 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <title>爱购不够(AGBG.COM)-正品低价、品质保障、配送及时、轻松购物！</title>
+    <meta name="description" content="爱购不够AGBG.COM-专业的综合网上购物商城，为您提供正品低价的购物选择、优质便捷的服务体验。商品来自全球数十万品牌商家，囊括家电、手机、电脑、服装、居家、母婴、美妆、个护、食品、生鲜等丰富品类，满足各种购物需求。" />
+    <meta name="Keywords" content="网上购物,网上商城,家电,手机,电脑,服装,居家,母婴,美妆,个护,食品,生鲜" />
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div>
+          <!--固定导航-->
+          <div class="top" id="top_hidd" style="height:60px;position: fixed;background-color: #1e78e7;z-index:999 ;">
+              <div class="text container">
+                  <!--logo-->
+                  <div class="top_left fl">
+                      <img src="images/01.jpg" alt="" style="width: 100%;height: 100%;"/>
+                  </div>
+                  <!--导航-->
+                  <div class="top_midd fl">
+                      <ul class="navv">
+                          <li class="flli"><a href="indexRoot.html">主页 <span class="glyphicon glyphicon-home"></span></a></li>
+                          <li class="flli pill" ><a href="javascript:;">商品分类 <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                              <ul>
+                                  <li><a class="electron_one"  href="javascript:;">特惠专区</a></li>
+                                  <li><a class="electron_two"  href="javascript:;">电子产品</a></li>
+                                  <li><a class="electron_tree" href="javascript:;">生活用品</a></li>
+                                  <li><a class="electron_fore" href="javascript:;">小吃零食</a></li>
+                              </ul>
+
+                          </li>
+                          <li class="flli"><a href="person.html">个人中心 <span class="glyphicon glyphicon-user"></span></a></li>
+                          <li class="flli"><a href="personaccount.html">微服务 <span class="glyphicon glyphicon-cloud"></span></a></li>
+                          <li class="flli"><a href="index.html">安全退出 <span class="glyphicon glyphicon-off"></span></a></li>
+                      </ul>
+                  </div>
+                  <!--登录注册-->
+                  <div class="top_right fr">
+                      <div class="ser_box">
+                          <p><span><a href="index.html">登录</a></span> | <span><a href="index.html">注册</a></span></p>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+          <!--中间内容-->
+          <div class="center_txt container" style="width: 100%;height: 500px;"></div>
+          <!--footer-->
+          <div class="copyright" style="text-align: center;font-size: 20px; margin-top: 50px;">
+              <p>个人版权® </p>
+              <p><span><a href="">帮助</a></span> | <span><a href="">用户反馈</a></span></p>
+              <p>请联系我：17167101167</p>
+              <p>qq邮箱：448335044@qq.com</p>
+          </div>
+
+
+   </div>
+</body>
+</html>
+<script>
+    $(document).ready(function() {
+
+        /*下拉菜单*/
+        $(function () {
+            $('.pill').hover(function (e) {
+                $(this).children().stop().slideToggle()
+            });
+        })
+        /*$(".pill").mouseover(function (){
+            $(".pill>ul").show();
+        }).mouseout(function (){
+            $(".pill>ul").hide();
+        });*/
+});
+</script>

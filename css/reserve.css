@@ -1,0 +1,220 @@
+body{
+    margin:0;
+    padding:0;
+}
+.container-new{
+    margin: 0px auto;
+    width: 1300px;
+}
+
+ul,h1,input,h5,p{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+button{
+    border:0;
+}
+a{
+    text-decoration: none;
+    color: gray;
+}
+
+/*中间部分*/
+.center{
+    margin: 0 auto;
+    width: 1300px;
+    height: 700px;
+    margin-top: 140px;
+    /*position: relative;*/
+   /* background-color: #555555;*/
+
+}
+.center ul li{
+    /*margin-top: 45px;*/
+    /**/
+    width: 300px;
+    height: 35px;
+    /*border: 1px solid #999395;*/
+}
+.center ul li a{
+    font: 22px/1.5 "Microsoft YaHei","微软雅黑",arial,simsun,"宋体";
+    color: #999;
+    text-decoration: none;
+}
+.center ul li a:hover{
+    color: #f53807;
+    /*font: 26px/1.5 "Microsoft YaHei","微软雅黑",arial,simsun,"宋体";*/
+}
+.line {
+
+    /* padding-right: 15px;
+     border-right: 1px solid #000;*/
+    width: 2px;
+    height: 500px;
+    background: #e5e5e5;
+
+}
+/*箭头*/
+.position{
+    position: relative;
+}
+#b {
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-top: 25px solid rgba(0, 0, 0, 0);
+    border-bottom: 25px solid rgba(0, 0, 0, 0);
+    border-right: 25px solid #e5e5e5;
+    border-left: 25px solid rgba(0, 0, 0, 0);
+    background-color: none;
+    margin-top: 25px;
+    float: left;
+    position:absolute;
+    left:-34px;
+
+}
+/*90*/
+.b{
+    top:80px;
+}
+/**/
+.center .center-text{
+    width: 70%;
+    margin: 0 auto;
+
+}
+.form{
+    width:100%;
+    height:40px;
+    margin-top: 20px;
+   /* position:relative;
+    left: 40px;*/
+
+
+}
+.form input{
+    width: 85%;
+    height: 40px;
+    float:left;
+    padding-left:15px;
+}
+.form button{
+    width: 15%;
+    height: 40px;
+    background-color: #1e78e7;
+    float:left;
+    color: #fff;
+}
+.list,
+.reserch-text{
+    color:#999;
+    margin-top: 20px;
+    font: 14px/1.5 "Microsoft YaHei","微软雅黑",arial,simsun,"宋体";
+}
+.list h4,
+#number
+{
+    color:#1e78e7;
+    margin-bottom:10px;
+}
+.list p,
+.reserch-text p{
+    margin-top: 10px;
+}
+.list h5{
+    margin-top: 36px;
+}
+/*账号登陆*/
+.center a{
+    text-decoration: none;
+}
+.phone{
+    padding-top: 1px;
+    background-color:#b1a5a5;
+}
+.phone a:hover{
+    color:#fff;
+}
+#phone,
+#account,.login-box{
+    height:80%;
+    background-color: #d9d9d9;
+}
+
+.center .account-text{
+    width: 430px;
+    height:350px;
+    margin-top: 40px;
+    position: relative;
+    left: 140px;
+}
+.center .account-text h3,
+.center .account-text .phone-submit{
+    text-align:center;
+
+
+}
+.center .account-text h3 span{
+    margin:50px;
+
+}
+.center .account-text .phone-form{
+    text-align: center;
+}
+.center .account-text .phone-form div{
+    margin-top:18px;
+}
+.center .phone-form .phone-submit {
+
+}
+/*搜索出来的*/
+#listsss p a{
+    color:#1e78e7;
+}
+
+
+/*返回按钮*/
+.return,
+.returnLogin{
+    display: block;
+    width: 200px;
+    height: 30px;
+    margin-top: 38px;
+    font-size: 25px;
+    position: relative;
+}
+.return a{
+
+    position: absolute;
+    left:30px;
+}
+.returnLogin a{
+    position: absolute;
+    left:118px;
+    top:4px;
+    color:#999;
+    font-size: 16px;
+}
+#return,#returns,#returncode{
+    position: absolute;
+    right:0;
+    top:290px;
+    color:#999;
+}
+#returncode{
+    top: 10px;
+    right:10px;
+}
+/*#number{
+    color:#1e78e7;
+    font-size:18px;
+    margin-top:60px;
+    font-weight:normal;
+}*/
+/*footer*/
+.footer{
+    text-align: center;
+   /* position: absolute;
+    bottom:30px;*/
+}

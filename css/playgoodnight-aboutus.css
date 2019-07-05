@@ -1,0 +1,243 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  /*border: 1px solid red;*/
+}
+html{
+  width: 1300px;
+  margin: 0px auto;
+}
+/*头部导航*/
+.head{
+  margin: 0px auto;
+  width: 1300px;
+  height: 100px;
+  /* background-color:blue;*/
+
+}
+.head>ul{
+  margin: 0px auto;
+  width: 1300px;
+  height: 100px;
+  line-height: 100px;
+
+}
+.head>ul>li{
+  text-align: center;
+  list-style: none;
+  float: left;
+  height: 100px;
+  padding:0px 50px;
+  font-size: 1em;
+  transition:all 0.1s linear;
+}
+.head>ul>li>a{
+  line-height: 50px;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+  color: gray;
+}
+.head>ul>li>a:hover{
+  /*设置动画方向*/
+  transform-origin:bottom center;
+  /*放大1.5倍*/
+  transform:scale(1.1);
+  color: #008DE1;
+}
+/*黑线*/
+.blackx{
+  width: 1900px;
+  margin-left: -300px;
+  height: 1px;
+  background-color: gray;
+}
+/*中间主体*/
+.center{
+  margin: 0px auto;
+  width: 1300px;
+  /*background-color: #555555;*/
+}
+/*关于玩睡*/
+.playsleep{
+  margin: 0px auto;
+  width: 1300px;
+  /*background-color: #555555;*/
+}
+/*中间关于玩睡标题*/
+.wstitle{
+  margin: 0px auto;
+  width: 1000px;
+  height: 200px;
+  /*background-color: gray;*/
+}
+.wstitle>h2{
+  margin-top: 50px;
+  text-align: center;
+}
+.wstitle>ul{
+  margin-top: 50px;
+}
+.wstitle>ul>p{
+  text-align: center;
+}
+/*玩睡发展经历*/
+.experience{
+  width: 1000px;
+  height: 1200px;
+  margin: 0px auto;
+  /*background-color: #cccccc;*/
+}
+.container{
+  width: 1000px;
+}
+.row{
+  width: 1000px;
+  margin-top: 10px;
+}
+.row>.col-md-6>p{
+  color: gray;
+  font-size: 16px;
+
+}
+.col-md-6{
+  height: 200px;
+  /*border-left:1px dashed #000;*/
+  /*border-bottom:1px dashed #000;*/
+}
+.container>.row:nth-child(odd)>div:first-child{
+  border-right: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+.container>.row:nth-child(odd)>div:first-child>span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #008DE1;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  z-index: 100;
+}
+.container>.row:nth-child(odd)>div:first-child>h2{
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  color: gray;
+  font-size: 50px;
+}
+.container>.row:nth-child(even)>div:last-child{
+  border-left: 2px dashed gray;
+  border-bottom: 2px dashed gray;
+  border-bottom-left-radius: 20px;
+}
+.container>.row:nth-child(even)>div:last-child>span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: #008DE1;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  z-index: 100;
+}
+.container>.row:nth-child(even)>div:last-child>h2{
+  position: absolute;
+  bottom: 0px;
+  left: 12px;
+  color: gray;
+  font-size: 50px;
+}
+/*用户协议*/
+.UserAgreement{
+  margin: 0px auto;
+  width: 1000px;
+  /*background-color:blue;*/
+}
+.UserAgreement>h2{
+  margin-top: 50px;
+  text-align: center;
+}
+/*huiyuan{
+  margin: 0px auto;
+  width: 1000px;
+}
+.huiyuan>h2{
+  margin-top: 50px;
+  text-align: center;
+}*/
+/*底部*/
+.footer{
+  padding-top: 50px;
+
+  width: 1900px;
+  height: 120px;
+  margin-left: -320px;
+  background-color: #ececec;
+}
+.footer>p{
+  width: 100%;
+  height: 35px;
+  margin: 0px auto;
+  line-height: 35px;
+  text-align: center;
+  font-size: 15px;
+}
+/*联系我们*/
+.callme{
+  margin: 0px auto;
+  width: 1000px;
+  height: 500px;
+  background: url("../images/dz.jpg") no-repeat;
+
+
+}
+.address{
+  margin-left: 50px;
+  width: 300px;
+  height: 400px;
+  background-color:#008DE1;
+}
+.address>h1{
+  width: 300px;
+  height: 20px;
+  color: white;
+  font-size: 22px;
+  margin: 50px auto;
+  margin-left: 80px;
+  display: inline-block;
+
+}
+.address>p{
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+.contact{
+  width: 1000px;
+  height: 50px;
+  margin: 150px auto;
+  /*background-color: #555555;*/
+}
+.contact>ul{
+  list-style: none;
+}
+.contact>h1{
+  font-size: 20px;
+}
+.contact>ul>li{
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-top: 50px;
+  margin-left: 100px;
+  font-size: 15px;
+}
+.contact>ul>li>a{
+  text-decoration: none;
+  color: gray;
+}

@@ -1,0 +1,298 @@
+/*公共部分*/
+body{
+    margin:0;
+    padding:0;
+    background-color: #999999;
+}
+a{
+    color:#999;
+    text-decoration:none;
+
+}
+.container{
+    width:1190px;
+    margin:0 auto;
+}
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+ul,h1,input,h5,p,dt,dd,dl{
+    list-style:none;
+    margin:0;
+    padding:0;
+    /*ul有默认的内边距和外边距*/
+
+}
+input,button{
+    border:0;
+    outline: none;/*取消轮廓边框*/
+}
+.color{
+    color:#F10215 !important;
+}
+
+/*header部分*/
+header {
+    height: 80px;
+    background-color: #3260c2;
+}
+/*快速导航部分*/
+.nav{
+
+    height:30px;
+    line-height: 30px;
+    background-color: #e3e4e5;
+    border-bottom:1px solid #ddd;
+
+}
+.gd{
+    margin-left:200px;
+    }
+.fr li{
+    float:left;
+}
+.s-line{
+    width:1px;
+    height:10px;
+    background-color:#ccc;
+    margin:10px 12px 0;
+}
+.nav a{
+
+    font-size:12px;
+}
+.nav a:hover,
+.nav-s li a:hover,
+.hotwords a:hover
+{
+    color:#F10215;
+}
+.mobile{
+    position:relative;
+
+}
+.mobile img{
+    position:absolute;
+    right:0;
+    top:21px;
+    border:1px solid #ccc;
+}
+/*中间头部分*/
+.middle{
+    height:140px;
+    position:relative;
+}
+/*logo*/
+.logo{
+    /*margin-top:-30px;*/
+    position:absolute;
+    bottom: 0px;
+    left:0;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+
+}
+.logo a{
+    display: block;
+    width:170px;
+    height: 170px;
+
+    background:url(../img/logo.png) no-repeat;
+
+}
+/*搜索栏*/
+.form{
+    width:550px;
+    height:35px;
+    background-color: red;
+    position:absolute;
+    left:250px;
+    top:25px;
+}
+.form input{
+    width: 495px;/*原来498.下面字体前面加padding，搜索框就掉下去了。498-3*/
+    height: 35px;
+    /*border:1px solid #F10215;*/
+    float:left;
+    padding-left:3px;
+}
+.form button{
+    width: 50px;
+    height: 35px;
+    background-color: #F10215;
+    float:left;
+}
+/*购物车*/
+.car{
+    width: 188px;
+    height: 33px;
+    line-height: 33px;
+    border:1px solid #F10215;
+    position:absolute;
+    top:25px;
+    right:95px;
+    background-color: #fff;
+    text-align:center;
+    font-size:12px;
+
+}
+.car span{
+    width: 15px;
+    height: 15px;
+    line-height:15px;
+    background-color: #F10215;
+    border-radius: 50%;
+    position:absolute;/*加了绝对定位，固定定位，浮动的行内与去元素，可以不用转换，直接给宽度和高度*/
+    top:6px;
+    right: 45px;
+    font-size: 12px;
+    color: #fff;
+
+
+
+}
+/*关键字*/
+.hotwords{
+    position:absolute;
+    top:68px;
+    left:250px;
+}
+.hotwords a{
+    color:#555;
+    font-size: 12px;
+    margin-right: 10px;
+}
+/*小导航*/
+.nav-s{
+    width: 880px;
+    height: 40px;
+    line-height:40px;
+    position: absolute;
+    bottom: 0px;
+    left: 200px;
+}
+.nav-s li{
+    float:left;
+
+}
+.nav-s li a{
+    font-size: 14px;
+    font-weight:700;
+    color:#333;
+    margin-left:30px;
+}
+/*小logo*/
+.logo-s{
+    position: absolute;
+    bottom: 10px;
+    right: 0px;
+}
+/*中间部分*/
+/*footer部分*/
+footer{
+    margin-top:35px;
+    height: 500px;
+    background-color: #EAEAEA;
+}
+.footer-t{
+    padding:30px 0;
+    border-bottom:1px solid #999;
+    overflow: hidden;/*给父元素清除浮动*/
+}
+.footer-t ul li{
+    width: 297px;
+    height:43px;
+    line-height: 43px;
+    position:relative;
+}
+.footer-t li h5{
+    position:absolute;
+    top: 0px;
+    left: 38px;
+    width: 36px;
+    height: 43px;
+    background:url(../img/ft.png) no-repeat;
+    text-indent: -999em;/*首行缩进，把多字搞飞*/
+}
+.footer-t li:nth-child(2) h5{
+    background-position: 0 -43px;
+}
+.footer-t li:nth-child(3) h5{
+    background-position: 0 -86px;
+}
+.footer-t li:nth-child(4) h5{
+    background-position: bottom;
+}
+.footer-t li p{
+    font-weight:700;
+    margin-left:82px;
+
+}
+
+.help{
+    height:200px;
+    border-bottom:1px solid #999;
+    padding-top: 25px;
+    box-sizing: border-box;/*內减盒子模型*/
+}
+.help dl{
+    width: 192px;
+    float:left;
+}
+.help dt,
+.coverage h5{
+    color:#666;
+    height: 30px;
+    font-size:16px;
+}
+.help dd{
+    height: 22px;
+}
+.coverage{
+    width: 200px;
+    height: 150px;
+    background:url(../img/ch-s.jpg) no-repeat;
+}
+.coverage h5{
+    padding-left:35px;
+}
+.coverage p,
+.coverage a{
+    font-size:12px;
+    color:#666;
+    line-height:18px;
+    width:180px;
+}
+.coverage a{
+    display:block;
+    text-align:right;
+}
+/*底部版权*/
+.copyright{
+    padding-top:20px;
+    text-align:center;
+
+}
+.copyright a{
+    color:#666;
+}
+.copyright span{
+    margin:0 8px;
+    color:#999;
+}
+.copyright .ba{
+
+    padding-top:20px;
+}
+.copyright .ba p{
+    line-height: 22px;
+}
+.copyright .footer-ico a{
+    display:inline-block;
+    width: 103px;
+    height: 33px;
+    background:url(../img/ch-s.jpg) no-repeat -200px 0;
+
+}

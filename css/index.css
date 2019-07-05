@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /*border: 1px solid red;*/
+}
+body{
+    padding-bottom: 200px;
+}
+/*头部*/
+.head{
+    margin: 0px auto;
+    width: 1300px;
+    height: 450px;
+    background: url("../images/head_bg.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+.head>ul{
+    float: right;
+    width: 788px;
+    height: 50px;
+    line-height: 50px;
+}
+.head>ul>li{
+    list-style: none;
+    float: left;
+    padding: 0px 20px;
+}
+.head>ul>li>a{
+    text-decoration: none;
+    color: white;
+}
+.head>img{
+    width: 400px;
+    height: 130px;
+    position: relative;
+    top: 200px;
+    left: 80px;
+}
+/*业务体系*/
+.business{
+    margin: 0px auto;
+    width: 1300px;
+    height: 380px;
+}
+.business>h1{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 80px auto;
+    text-align: center;
+    font-size: 36px;
+}
+.business>div{
+    margin-top: 125px;
+}
+.business>div>ul>li{
+    float: left;
+    list-style: none;
+}
+.business>div>ul>li>a{
+    text-align: center;
+    display: inline-block;
+    width: 106px;
+    height: 76px;
+    text-decoration: none;
+    padding: 20px 30px;
+    color: black;
+    font-weight: bold;
+}
+.business>div>ul>li>a>img{
+    width: 45px;
+    height: 45px;
+}
+.businessul{
+    margin: 0px auto;
+    width: 1190px;
+    height: 120px;
+}
+/*公司简介*/
+.company{
+    margin: 0px auto;
+    width: 1300px;
+    height: 600px;
+}
+.company>h1{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    margin: 60px auto;
+    text-align: center;
+    font-size: 36px;
+}
+.companycon{
+    text-align: center;
+}
+.companyimgs{
+    margin: 20px auto;
+    width: 900px;
+    height: 350px;
+}
+

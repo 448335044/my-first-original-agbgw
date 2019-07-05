@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>Document</title>
+
+</head>
+<body>
+<div class="login">
+    <div class="container center">
+        <!--左侧图片-->
+        <div class="left">
+            <!--左边最大-->
+            <div class="left_left left" style="width: 60%;height: 100%;">
+                <img class="imgs" src="images/login01.jpg" alt="" />
+            </div>
+            <!--右侧-->
+            <div class="left_right left" style="width: 40%;height: 100%;">
+                <!--上边最大-->
+                <div class="LR_top" style="width: 100%;height: 55%;">
+                    <img class="imgs" src="images/login02.jpg" alt=""/>
+                </div>
+                <!--下面-->
+                <div class="LR_bottom" style="width: 100%;height: 45%;">
+                    <!--下面左-->
+                    <div class="LRB_left left" style="width: 50%;height: 100%;">
+                        <img class="imgs " src="images/login03.jpg" alt=""/>
+                    </div>
+                    <div class="LRB_right left" style="width: 50%;height: 100%;">
+                        <img class="imgs" src="images/login04.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--右侧登陆框-->
+        <div class="right" >
+            <form action="" class="form-group">
+                <div class="form-group">
+                    <label >用户名</label>
+                    <input class="form-control" type="text" name="username"/>
+                    <div class="hidd" style="display:none;"><h4 >验证中...</h4><h2></h2></div>
+                </div>
+                <div class="form-group">
+                    <label >手机号</label>
+                    <input class="form-control" type="text" name="phone"/>
+                </div>
+                <div class="form-group">
+                    <label >密码</label>
+                    <input class="form-control" type="text" name="password"/>
+                </div>
+            </form>
+            <button class="form-control btn btn-success" >注册</button>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    /*get请求*/
+    /*点击按钮事件*/
+    var boxv = document.querySelector('input[name=username]');
+
+    document.querySelector('input[name="username"]').onblur = function(){
+        document.getElementsByClassName("hidd")[0].style.display = "block";
+        /*创建异步对象*/
+        var xhr = new XMLHttpRequest();
+        /*设置请求行*/
+        xhr.open('get','index_login.php?name='+boxv.value);
+        /*设置请求头*/
+        /*注册状态改变事件*/
+        xhr.onreadystatechange=function()
+        {
+            /*判断状态和请求是否成功并使用数据*/
+            if (xhr.readyState==4 && xhr.status==200)
+            {
+
+                /*console.log(xhr.responseXML);*/
+                /*document.getElementById("myDiv").innerHTML=xmlhttp.responseText;*/
+                console.log(xhr.responseText);
+                /**/
+                document.querySelector('h2').innerHTML = xhr.responseText;
+                document.querySelector('h4').innerHTML = '验证完毕';
+            }
+        };
+         /*发送请求*/
+        xhr.send(null);
+    };
+
+
+    /*  /!*post请求*!/
+     var boxv = document.querySelector('input[name=username]');
+     boxv.onblur = function(){
+     /!*console.log(this.value);*!/
+     document.getElementsByClassName("hidd")[0].style.display = "block";
+     /!*创建异步对象*!/
+     var xhr = new XMLHttpRequest();
+     /!*设置请求行*!/
+     xhr.open('post','index_post.php');
+     /!*设置请求头*!/
+     xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+     /!*注册状态改变事件*!/
+     xhr.onreadystatechange=function(){
+     if(xhr.readyState==4 && xhr.status==200){
+     /!*console.log(xhr.responseText);*!/
+     document.querySelector('h2').innerHTML = xhr.responseText;
+     document.querySelector('h4').innerHTML = '验证完毕';
+     }
+     };
+     /!*发送请求.post要传参*!/
+     xhr.send('name='+boxv.value);
+
+     };*/
+
+
+/*josn*/
+  /* /!*点击按钮事件*!/
+   var boxv = document.querySelector('input[name=username]');
+
+   document.querySelector('input[name="username"]').onblur = function(){
+   document.getElementsByClassName("hidd")[0].style.display = "block";
+   /!*创建异步对象*!/
+   var xhr = new XMLHttpRequest();
+   /!*设置请求行*!/
+   xhr.open('get','index_post.php');
+   /!*设置请求头*!/
+   /!*注册状态改变事件*!/
+   xhr.onreadystatechange=function()
+   {
+   /!*判断状态和请求是否成功并使用数据*!/
+   if (xhr.readyState==4 && xhr.status==200)
+   {
+      var res = JSON.parse(xhr.responseText);
+       console.log(res);
+       var html = "";
+       html+='<table>';
+       for(var i=0; i<res.length; i++){
+           var currentobj = res[i];
+           html+='<tr>';
+           html+='<td>名字叫：'+currentobj.name+'</td><td>，年纪是：'+currentobj.age+'</td>';
+           html+='</tr>';
+
+       }
+       html+='</table>';
+       document.getElementById("box").innerHTML = html;
+
+
+   /!**!/
+  /!* document.querySelector('h2').innerHTML = xhr.responseText;
+   document.querySelector('h4').innerHTML = '验证完毕';*!/
+   }
+   };
+
+
+   /!*发送请求*!/
+   xhr.send(null);
+   };*/
+</script>

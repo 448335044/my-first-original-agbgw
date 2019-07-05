@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reserve.css"/>
+    <!--<link rel="stylesheet" href="css/indexRoot.css"/>-->
+    <!--<link rel="stylesheet" href="css/weifuwu.css"/>-->
+    <link rel="stylesheet" href="css/person.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <title>Document</title>
+</head>
+<body>
+<div>
+    <!--固定导航-->
+    <div class="top" id="top_hidd" style="height:60px;position: fixed;background-color: #1e78e7;z-index:999 ;">
+        <div class="text container">
+            <!--logo-->
+            <div class="top_left fl">
+                <img src="images/logo.png" alt="" style="width: 100%;height: 100%;"/>
+            </div>
+            <!--导航-->
+            <div class="top_midd fl">
+                <ul class="navv">
+                    <li class="flli"><a href="indexRoot.html">主页 <span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="flli" ><a href="goods.html">更多商品 <span class="glyphicon glyphicon-gift"></span></a></li>
+                    <li class="flli"><a href="person.html">个人中心 <span class="glyphicon glyphicon-user"></span></a></li>
+                    <li class="flli"><a href="reserve.html">帮助中心 <span class="glyphicon glyphicon-cloud"></span></a></li>
+                    <li class="flli"><a href="index.html">安全退出 <span class="glyphicon glyphicon-off"></span></a></li>
+                </ul>
+            </div>
+            <!--登录注册-->
+            <div class="top_right fr">
+                <div class="ser_box">
+                    <p><span><a href="index.html">登录</a></span> | <span><a href="index.html">注册</a></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="center" style="margin-top:0px;position: absolute;top:60px;">
+<div class="container" style="height: 600px;background-color: #cde9f5;padding-top: 100px">
+            <!--左侧导航-->
+            <div class="center_left" >
+                <ul class="hidd_nav"><li><span>个人中心</span><span class="glyphicon glyphicon-triangle-bottom"></span>
+                    <ul class="haha">
+                        <li><a href="date.html">我的资料</a></li>
+                        <li><a href="shop_cart.html" >我的购物车</a></li>
+                    </ul>
+                </li><li><span>订单中心</span><span class="glyphicon glyphicon-triangle-bottom"></span>
+                    <ul class="hehe">
+                        <li><a href="order.html">我的订单</a></li>
+                        <li><a href="message.html">我的消息</a></li>
+                    </ul>
+                </li></ul>
+                <!-- <ul style="font-size: 20px;">个人中心</ul>
+                     <li  >
+                         <li><a href="person.html">我的资料</a></li>
+                         <li><a href="message.html">我的消息</a></li>
+                     </li>
+                 <ul style="font-size: 20px;">订单中心</ul>
+                 <li  >
+                     <li><a href="order.html">我的订单</a></li>
+                     <li><a href="shop_cart.html" >我的购物车</a></li>
+
+                 </li>-->
+            </div>
+            <!--分割线-->
+            <div class="position" style="width: 5%;height:500px;float: left;">
+                <div class="line"></div>
+            </div>
+            <!--个人资料内容-->
+            <div class="date_per" >
+                <p><img src="images/tehui08.jpg" alt=""/></p>
+                <p><span>购小二</span> - <span>男</span></p>
+                <p><span>绑定手机号 : </span><span>17167101167</span></p>
+                <p>注册时间 : <span>2019-06-18</span></p>
+                <p class="modifiy"><a href="date.html" style="color: #1e78e7;">修改我的资料</a></p>
+            </div>
+</div>
+</div>
+    <div class="copyright container" style="background-color: rgba(0, 0, 0, 0.7);color: #fff; width: 100%;margin:0 auto;text-align: center;font-size: 20px;position:absolute;top: 760px;">
+        <p>个人版权® </p>
+        <p><span><a style="color: #FFFFFF;" href="">帮助</a></span> | <span><a style="color: #FFFFFF;" href="">用户反馈</a></span></p>
+        <p>请联系我：17167101167</p>
+        <p>qq邮箱：448335044@qq.com</p>
+    </div>
+<script>
+    /*下拉菜单*/
+    $(document).ready(function(){
+        $(function(){
+            $('.pill').hover(function(e) {
+                $(this).children().stop().slideToggle()
+            });
+        });
+        $(function(){
+            $('.hidd_nav>li').hover(function(e) {
+                $(this).children().stop().slideToggle()
+            });
+        });
+
+    });
+</script>
+<script>
+    var ulLi = document.getElementById("pointer").getElementsByTagName('li');
+    var tran=document.getElementById('b');
+    for (var i = 0; i < ulLi.length; i++) {
+        ulLi[i].onmouseover = function () {
+            for (var i = 0; i < ulLi.length; i++) {
+                if (ulLi[i] === this) {
+                    tran.style.marginTop=ulLi[i].offsetTop-125+'px';
+                }
+            }
+        }
+    }
+</script>
+<script src='js/jquery.min.js'></script>
+<script  src="js/main.js"></script>
+</body>
+</html>

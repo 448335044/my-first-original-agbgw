@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /*border:1px solid red;*/
+    /*background-color: #999;*/
+}
+p,span.a{
+    margin: 0;
+    padding:0;
+}
+.container{
+    padding-left: 0;
+    padding-right: 0;
+
+}
+a{
+    text-decoration:none;
+}
+body{
+    height:800px;
+
+
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+/*top nav*/
+.top{
+    width: 100%;
+    height:120px;
+    /*background-color: yellow;*/
+}
+.top .text{
+    /*width: 80%;
+    margin: 0 auto;*/
+    height: 60px;
+    line-height: 55px;
+}
+.top .text .top_left{
+    /*width: 60px;*/
+    width: 5%;
+    height: 60px;
+    float: left;
+}
+.top .text .top_midd{
+    float: left;
+    width: 75%;
+    height: 60px;
+}
+.top .text .top_midd .navv{
+    width: 100%;
+    height: 60px;
+}
+.top .text .top_midd .flli{
+    float: left;
+    /*width: 100px;*/
+    width: 20%;
+    height: 60px;
+    display: inline;
+    /*background-color: yellow;
+    border: 1px solid #999999;*/
+    text-align: center;
+    position:relative ;
+}
+.top .text .top_midd .flli ul{
+    width:100%;
+    position: absolute;
+    left: 0;
+    top:0px;
+    display:none;
+
+}
+.top .text .top_midd .flli ul li{
+    width:100%;
+    height: 30px;
+    line-height: 40px;
+    list-style: none;
+    /*
+        background-color: #fff;
+        border: 1px solid #999999;*/
+
+
+
+}
+.top .text .top_midd .flli li a{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    color:#f53807;
+    text-decoration:none;
+}
+.top .text .top_midd li a{
+    color: #ffffff;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+    /*margin-left: 16px;*/
+    text-align: center;
+    text-decoration:none;
+}
+.top .text .top_right{
+    position: relative;
+    width: 20%;
+    float:right;
+    height: 60px;
+
+
+}
+.top .text .top_right .ser_box{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    color:#fff;
+
+}
+.top .text .top_right .ser_box p{
+    position: absolute;
+    right: 0;
+}
+.top .text .top_right .ser_box p a{
+    color:#ffffff;
+}
+/*footer*/
+

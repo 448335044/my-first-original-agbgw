@@ -1,0 +1,164 @@
+
+{
+
+  "cursor": 0,
+
+  "size": 40,
+
+  "page": 0,
+
+  "result": [{
+
+    "price": "128",
+
+    "name": "裙子",
+
+    "imgUrl": "images/login3.jpg"
+
+  },
+
+    {
+
+      "price": "2000",
+
+      "name": "华为手机",
+
+      "imgUrl": "images/tehui02.jpg"
+
+    },
+
+    {
+
+      "price": "3000",
+
+      "name": "小米手机",
+
+      "imgUrl": "images/tehui05.jpg"
+
+    },
+
+    {
+
+      "price": "4000",
+
+      "name": "乐视手机",
+
+      "imgUrl": "images/sj.jpg"
+
+    },
+
+    {
+
+      "price": "5000",
+
+      "name": "iPhone-XS",
+
+      "imgUrl": "images/tehui01.jpg"
+
+    },
+
+    {
+
+      "price": "6000",
+
+      "name": "华为笔记本",
+
+      "imgUrl": "images/sj3.jpg"
+
+    },
+
+    {
+
+      "price": "70",
+
+      "name": "辣条",
+
+      "imgUrl": "images/tehui13.jpg"
+
+    },
+
+    {
+
+      "price": "180",
+
+      "name": "饼干",
+
+      "imgUrl": "images/ls04.jpg"
+
+    },
+
+    {
+
+      "price": "98",
+
+      "name": "香辣鸡爪",
+
+      "imgUrl": "images/ls05.jpg"
+
+    },
+
+    {
+
+      "price": "128",
+
+      "name": "鸭爪子",
+
+      "imgUrl": "images/tehui15.jpg"
+
+    },
+
+    {
+
+      "price": "2000",
+
+      "name": "oppo手机",
+
+      "imgUrl": "images/sj02.jpg"
+
+    },
+
+    {
+
+      "price": "3000",
+
+      "name": "三星手机",
+
+      "imgUrl": "images/sanxin.jpg"
+
+    },
+
+    {
+
+      "price": "400",
+
+      "name": "裙子",
+
+      "imgUrl": "images/login5.jpg"
+
+    },
+
+    {
+
+      "price": "2089",
+
+      "name": "VIVO手机",
+
+      "imgUrl": "images/sj01.jpg"
+
+    },
+
+    {
+
+      "price": "80",
+
+      "name": "精品点心",
+
+      "imgUrl": "images/ls06.jpg"
+
+    }
+
+  ],
+
+  "hasnext": 100
+
+}

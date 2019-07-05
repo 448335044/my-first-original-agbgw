@@ -1,0 +1,245 @@
+* {
+
+
+    /*border:1px solid red;*/
+}
+body{
+    margin: 0;
+    padding: 0;
+
+}
+/*logo*/
+.top_logo{
+    width: 100%;
+    height: 90px;
+
+}
+.logo{
+    width: 270px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: relative;
+}
+.logo .logo_img{
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+.logo .intro{
+    width: 200px;
+    height: 60px;
+    float: left;
+    margin-left: 10px;
+    padding-left: 10px;
+
+}
+.logo .intro .intro_title{
+    width: 200px;
+    height: 45px;
+    position: absolute;
+    top: -6px;
+
+}
+.logo .intro .intro_title p{
+    width: 200px;
+    height: 45px;
+    font-size: 30px;
+    color: #f53807;
+
+}
+.logo .intro .intro_text{
+    width: 200px;
+    height: 15px;
+
+}
+.logo .intro .intro_text P{
+    width: 200px;
+    height: 15px;
+    font-size: 14px;
+    position: absolute;
+    bottom: -6px;
+
+
+}
+
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.imgs{
+    width: 100%;
+    height: 100%;
+}
+.login_bg{
+    width: 100%;
+    height:560px ;
+    background-color: #1e78e7;
+}
+.login{
+    width: 65%;
+    height: 380px;
+    margin:0 auto;
+    padding-top: 90px;
+    position: relative;
+
+}
+.login .img_text{
+    width: 50%;
+    font-size: 20px;
+    position: absolute;
+    bottom: -90px;
+    background-color: #fff;
+    border: 1px solid #ffffff;
+}
+.center{
+    width: 100%;
+    height: 330px;
+
+}
+.center .left{
+    width: 50%;
+    height: 100%;
+    float:left;
+    /*border: 2px solid #ffffff;*/
+}
+.center .right{
+    width: 30%;
+    float:right;
+    height:100%;
+    border: 1px solid #999;
+    background-color: #fff;
+}
+/*右侧*/
+.login .right_box{
+    background-color: #fff;
+    width:300px;
+    height:380px;
+    position:relative;
+
+}
+.right_top {
+
+    background-image: url("../images/login7.jpg") !important;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+
+}
+.right_top .text{
+    width: 35%;
+    padding-left: 20px;
+    color:#ffffff;
+
+}
+.right_top .title{
+    /*padding-top: -5px;*/
+    width: 100%;
+    font-size:18px;
+    color:#f53807;
+    text-align: center;
+
+}
+.right_top .line{
+    height:1px;
+    background: #f53807;
+}
+.right_top .intro{
+    font-size:16px;
+    padding-top: 4px;
+}
+/*表单*/
+.right .form{
+    height: 250px;
+    line-height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-top: 1px solid #f53807;
+    position:relative;
+}
+.right .form form{
+    width: 100%;
+    height: 250px;
+}
+.right .form form div{
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.right .form label{
+
+
+}
+.right .form p{
+    height: 30px;
+    background-color: #f53807;
+    display: none;
+    color:#ffffff;
+    font-size: 16px;
+
+}
+.right .form input{
+    float:right;
+    height:30px;
+    width: 70%;
+    padding-left: 5px;
+
+
+}
+.right .form .code{
+    height: 30px;
+    width: 35%;
+}
+.right .form .acquire{
+    height: 30px;
+    width: 35%;
+    background-color: #f53807;
+    float: right;
+    padding-left: 8px;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.right .form #sign div{
+    /*padding-top:8px;*/
+   /* padding-top:12px;*/
+    margin-bottom: 20px;
+
+}
+.right .form #sign .dissign{
+    padding-top: 22px;
+}
+
+.right .form button{
+    width: 100%;
+    height: 30px;
+    background-color: #f53807;
+    border: none;
+    color:#ffffff;
+    font-size: 15px;
+   /* position: absolute;
+    bottom: 0;*/
+
+}
+.right .form .disLogin{
+    margin-top: 20px;
+    padding-top: 12px;
+}
+.right_box .signBtn{
+
+   /*margin-right:20px;*/
+    /*position: absolute;
+    bottom:0px;
+    right:20px;*/
+
+}
+.right_box .signBtn p,
+.right_box .loginBtn p{
+    font-size: 18px;
+    position: absolute;
+    bottom:0px;
+    right:20px;
+    color:#f53807;
+    font-weight:400;
+}

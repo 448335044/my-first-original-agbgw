@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reserve.css"/>
+    <!--<link rel="stylesheet" href="css/indexRoot.css"/>-->
+
+    <link rel="stylesheet" href="css/person.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <title>Document</title>
+</head>
+<body>
+
+<div style="width: 100%;height: 800px;">
+    <!--固定导航-->
+    <div class="top" id="top_hidd" style="height:60px;position: fixed;background-color: #1e78e7;z-index:999 ;">
+        <div class="text container">
+            <!--logo-->
+            <div class="top_left fl">
+                <img src="images/logo.png" alt="" style="width: 100%;height: 100%;"/>
+            </div>
+            <!--导航-->
+            <div class="top_midd fl">
+                <ul class="navv">
+                    <li class="flli"><a href="indexRoot.html">主页 <span class="glyphicon glyphicon-home"></span></a></li>
+                    <li class="flli" ><a href="goods.html">更多商品 <span class="glyphicon glyphicon-gift"></span></a></li>
+                    <li class="flli"><a href="person.html">个人中心 <span class="glyphicon glyphicon-user"></span></a></li>
+                    <li class="flli"><a href="reserve.html">帮助中心 <span class="glyphicon glyphicon-cloud"></span></a></li>
+                    <li class="flli"><a href="index.html">安全退出 <span class="glyphicon glyphicon-off"></span></a></li>
+                </ul>
+            </div>
+            <!--登录注册-->
+            <div class="top_right fr">
+                <div class="ser_box">
+                    <p><span><a href="index.html">登录</a></span> | <span><a href="index.html">注册</a></span></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--中间内容区-->
+    <div class="center " style="height:700px;width:100%;margin:0 auto;position: absolute;top:60px;">
+        <div class="container" style="background-color: #cde9f5;height: 600px;">
+            <!--购物车内容区-->
+            <div class="container">
+                <h2>我的购物车</h2>
+                <div class="table-responsive" style="width: 80%;margin: 0 auto; padding-top: 40px;">
+                    <table class="table">
+                        <tr>
+                            <th><input name="itemAll" id="itemAll" type="checkbox"/>全选</th>
+                            <th>单价</th>
+                            <th>数量</th>
+                            <th>小计</th>
+                            <th>操作</th>
+                        </tr>
+                        <tr>
+                            <td><input name="item" type="checkbox"/>辣条</td>
+                            <td>￥36</td>
+                            <td>1</td>
+                            <td>36</td>
+                            <td><span><a href="">付款</a></span> | <span><a href="">查看详情</a></span></td>
+                        </tr>
+                        <tr>
+                            <td><input name="item" type="checkbox"/>裙子</td>
+                            <td>￥120</td>
+                            <td>1</td>
+                            <td>120</td>
+                            <td><span><a href="">付款</a></span> | <span><a href="">查看详情</a></span></td>
+                        </tr>
+                        <tr>
+                            <td><input name="item" type="checkbox"/>小米手机</td>
+                            <td>￥799</td>
+                            <td>3</td>
+                            <td>2397</td>
+                            <td><span><a href="">付款</a></span> | <span><a href="">查看详情</a></span></td>
+                        </tr>
+
+
+
+                    </table>
+                    <div class="add"> <button id="add">结算</button></div>
+                </div>
+
+                <!--返回-->
+                <div class="return_per" style="margin-top: 50px;"><a href="person.html">返回</a></div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--footer部分-->
+    <!--footer部分-->
+    <div class="copyright container" style="background-color: rgba(0, 0, 0, 0.7);color: #fff; width: 100%;margin:0 auto;text-align: center;font-size: 20px;position:absolute;top: 760px;">
+        <p>个人版权® </p>
+        <p><span><a style="color: #FFFFFF;" href="">帮助</a></span> | <span><a style="color: #FFFFFF;" href="">用户反馈</a></span></p>
+        <p>请联系我：17167101167</p>
+        <p>qq邮箱：448335044@qq.com</p>
+    </div>
+</div>
+
+
+
+<!--footer部分-->
+<script>
+    /*下拉菜单*/
+    $(document).ready(function(){
+        $(function(){
+            $('.pill').hover(function(e) {
+                $(this).children().stop().slideToggle()
+            });
+        })
+    });
+</script>
+<!--<script>
+    var ulLi = document.getElementById("pointer").getElementsByTagName('li');
+    var tran=document.getElementById('b');
+    for (var i = 0; i < ulLi.length; i++) {
+        ulLi[i].onmouseover = function () {
+            for (var i = 0; i < ulLi.length; i++) {
+                if (ulLi[i] === this) {
+                    tran.style.marginTop=ulLi[i].offsetTop+0+'px';
+                }
+            }
+        }
+    }
+</script>-->
+<!--全选按钮-->
+<script>
+    /*获取全选按钮*/
+    var itemAll =  document.getElementById("itemAll")
+    /*获取所有的box*/
+    var items = document.getElementsByTagName("input");
+    itemAll.onclick = function(){
+      for(var i=0;i<items.length;i++){
+          //设置所有多选框变成选中状态
+          items[i].checked = this.checked;
+      }
+    };
+    //为结算绑定单击响应函数
+    var add = document.getElementById("add");
+    add.onclick = function(){
+        //遍历items
+        for(var i=1 ; i<items.length ; i++){
+            //判断多选框是否选中
+            if(items[i].checked){
+                alert("您选择了"+ items[i].parentNode.innerText);
+            }
+            else{
+                alert("您还没有选择任何商品");
+                return;
+            }
+        }
+    };
+
+</script>
+<script src='js/jquery.min.js'></script>
+<script  src="js/main.js"></script>
+</body>
+</html>

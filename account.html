@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/reserve.css"/>
+    <link rel="stylesheet" href="css/weifuwu.css"/>
+    <title>Document</title>
+    <style>
+        .position{
+            position: relative;
+        }
+        #b {
+            display: block;
+            width: 0px;
+            height: 0px;
+            border-top: 25px solid rgba(0, 0, 0, 0);
+            border-bottom: 25px solid rgba(0, 0, 0, 0);
+            border-right: 25px solid #e5e5e5;
+            border-left: 25px solid rgba(0, 0, 0, 0);
+            background-color: none;
+            margin-top: 25px;
+            float: left;
+            position:absolute;
+            left:-34px;
+
+        }
+    </style>
+</head>
+<body>
+<!--导航-->
+<!--<div class="container-new">
+    <div class="head">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">玩睡吧网页版</a></li>
+            <li><a href="#">玩睡吧动态</a></li>
+            <li><a href="playgoodnight-joinus.html">加入我们</a></li>
+            <li><a href="#-joinus.html">关于我们</a></li>
+            <li><a href="#">业务体系</a></li>
+            <li><a href="#">服务与帮助</a></li>
+        </ul>
+    </div>
+</div>-->
+<div class="top" id="top_hidd" style="position: fixed;background-color: orangered;z-index:999 ;">
+    <div class="text container">
+        <!--logo-->
+        <div class="top_left fl">
+            <img src="images/01.jpg" alt="" style="width: 100%;height: 100%;"/>
+        </div>
+        <!--导航-->
+        <div class="top_midd fl">
+            <!--<ul class="navv">
+                <li ><a href="#">Home</a></li>
+                <li ><a href="#">Profile</a></li>
+                <li ><a href="#">Messages</a></li>
+                <li ><a href="#">Messages</a></li>
+                <li ><a href="#">Messages</a></li>
+            </ul>-->
+            <ul class="navv">
+                <li class="flli"><a href="#">主页</a></li>
+                <li class="flli"><a href="#">个人中心</a></li>
+                <li class="flli"><a href="#">社区</a></li>
+                <li class="flli"><a href="reserve.html">微服务</a></li>
+                <li class="flli pill" ><a href="">产品分类</a>
+                    <ul>
+                        <li><a href="">特惠专区</a></li>
+                        <li><a href="">生活用品</a></li>
+                        <li><a href="">电子产品</a></li>
+                        <li><a href="">小零食</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="top_right fr"><span class="btn">登陆</span><span class="btn">注册</span></div>
+    </div>
+</div>
+<div class="blackx"></div>
+<!--中间内容区-->
+<div class="center">
+    <div class="container-new">
+        <div class="row">
+            <!--左侧搜索与帮助导航-->
+            <div class="col-md-2">
+                <ul id="pointer">
+                    <li><a href="account.html" >账号中心</a></li>
+                    <li><a href="reserveTextNew.html.html">帮助中心</a></li>
+                </ul>
+            </div>
+            <div class="col-md-1 position" >
+                <div id="b"></div>
+                <div class="line"></div>
+            </div>
+
+            <!--右侧登录和注册-->
+            <div class="col-md-9">
+                <!--二维码弹窗-->
+                <div class="codeText" style="display: none;background-color:#000;">
+                    <div id="returncode" class="glyphicon glyphicon-remove">
+
+                    </div>
+                    <img src="images/weixincode.png" alt=""/>
+                </div>
+                <div class="account-text">
+
+                    <div class="phone">
+                        <h3>
+                            <span class="login"><a class="loginValue" href="#">登陆</a></span>
+
+                        </h3>
+                        <div class="blackx"></div>
+                    </div>
+                   <div class="login-box">
+                       <!--登录表单-->
+                       <div class="phone-form" id="account">
+                           <form action="message.html" class="form-inline">
+                               <div class="form-group has-success has-feedback">
+                                   <div class="input-group">
+                                       <span class="input-group-addon">账号</span>
+                                       <input type="text" class="form-control" name="userName" placeholder="请输入账号" >
+                                   </div>
+                                   <h5 class="hidd"></h5>
+                                   <div class="input-group">
+                                       <span class="input-group-addon">密码</span>
+                                       <input type="text" class="form-control"  placeholder="请输入密码">
+                                   </div>
+                               </div>
+                               <div class="input-group">
+                                   <input type="submit"  class="form-control btn btn-success" value="登录">
+                               </div>
+                               <div class="weixin">
+                                   <p><span>-- </span> <span>第三方帐号快速登录</span> <span> --</span></p>
+                                   <div class="bg">
+                                       <a class="code" href="#">
+                                           <img src="images/weixin.png" alt=""/>
+                                       </a>
+                                   </div>
+                                  <!-- &lt;!&ndash;取消注册&ndash;&gt;
+                                   <div id="returns" class="sign glyphicon glyphicon-arrow-left returnLogin"><a href="#">前往注册</a></div>
+                               -->
+                               </div>
+                           </form>
+                       </div>
+                       <!--注册表单-->
+                       <div class="phone-form" id="phone" style="display:none">
+
+                           <form action="#" class="form-inline">
+                               <div class="form-group has-success has-feedback">
+
+                                   <div class="input-group">
+                                       <span class="input-group-addon">账号</span>
+                                       <input type="text" class="form-control" placeholder="请填写您要注册的账号">
+                                   </div>
+                                   <div class="input-group">
+                                       <span class="input-group-addon">手机</span>
+                                       <input type="text" class="form-control" placeholder="请填写要注册的手机号">
+                                   </div>
+                                   <div class="input-group">
+                                       <span class="input-group-addon">密码</span>
+                                       <input type="text" class="form-control"  placeholder="请输入你要设置的密码">
+                                   </div>
+
+                               </div>
+                               <div class="input-group">
+                                   <input type="submit" class="form-control btn btn-success" value="提交">
+                               </div>
+                               <div id="return" class="glyphicon glyphicon-arrow-left returnLogin">
+                                   <a href="account.html">返回登录</a>
+                               </div>
+                           </form>
+                       </div>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer部分-->
+<script>
+    /*下拉菜单*/
+    $(document).ready(function(){
+        $(function(){
+            $('.pill').hover(function(e) {
+                $(this).children().stop().slideToggle()
+            });
+        })
+    });
+</script>
+<script>
+    var ulLi = document.getElementById("pointer").getElementsByTagName('li');
+    var tran=document.getElementById('b');
+    for (var i = 0; i < ulLi.length; i++) {
+        ulLi[i].onmouseover = function () {
+            for (var i = 0; i < ulLi.length; i++) {
+                if (ulLi[i] === this) {
+                    tran.style.marginTop=ulLi[i].offsetTop+0+'px';
+                }
+            }
+        }
+    }
+</script>
+<script src='js/jquery.min.js'></script>
+<script  src="js/main.js"></script>
+</body>
+</html>

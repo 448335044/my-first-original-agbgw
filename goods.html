@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!--<link rel="stylesheet" href="css/reserve.css"/>-->
+    <!--<link rel="stylesheet" href="css/indexRoot.css"/>-->
+    <!--<link rel="stylesheet" href="css/weifuwu.css"/>-->
+    <link rel="stylesheet" href="css/person.css"/>
+    <link rel="stylesheet" href="css/header.css"/>
+    <link rel="stylesheet" href="css/goods.css"/>
+    <title>所有商品</title>
+</head>
+<body>
+<!--固定导航-->
+<div class="top" id="top_hidd" style="height:60px;position: fixed;background-color: #1e78e7;z-index:999 ;">
+    <div class="text container">
+        <!--logo-->
+        <div class="top_left fl">
+            <img src="images/logo.png" alt="" style="width: 100%;height: 100%;"/>
+        </div>
+        <!--导航-->
+        <div class="top_midd fl">
+            <ul class="navv">
+                <li class="flli"><a href="indexRoot.html">主页 <span class="glyphicon glyphicon-home"></span></a></li>
+                <li class="flli pill" ><a href="javascript:;">商品分类 <span class="glyphicon glyphicon-triangle-bottom"></span></a>
+                    <ul>
+                        <li><a class="electron_one"  href="javascript:;">特惠专区</a></li>
+                        <li><a class="electron_two"  href="javascript:;">电子产品</a></li>
+                        <li><a class="electron_tree" href="javascript:;">生活用品</a></li>
+                        <li><a class="electron_fore" href="javascript:;">小吃零食</a></li>
+                    </ul>
+
+                </li>
+                <li class="flli"><a href="person.html">个人中心 <span class="glyphicon glyphicon-user"></span></a></li>
+                <li class="flli"><a href="reserve.html">帮助中心 <span class="glyphicon glyphicon-cloud"></span></a></li>
+                <li class="flli"><a href="index.html">安全退出 <span class="glyphicon glyphicon-off"></span></a></li>
+            </ul>
+        </div>
+        <!--登录注册-->
+        <div class="top_right fr">
+            <div class="ser_box">
+                <p><span><a href="index.html">登录</a></span>|<span><a href="index.html">注册</a></span></p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--商品内容-->
+<div class="goods container" >
+    <div id="test">
+
+        <!--假数据-->
+
+        <!--<div class="inner">
+
+            <img src="img/1.png"/>
+
+            <h3>名称：小米手机</h3>
+
+            <span>价格：1000</span>
+
+        </div>-->
+
+    </div>
+</div>
+<!--footer部分-->
+<div class="copyright container" style="background-color: rgba(0, 0, 0, 0.7);color: #fff; width: 100%;margin:0 auto;text-align: center;font-size: 20px;
+">
+    <p>个人版权® </p>
+    <p><span><a style="color: #FFFFFF;" href="">帮助</a></span> | <span><a style="color: #FFFFFF;" href="">用户反馈</a></span></p>
+    <p>请联系我：17167101167</p>
+    <p>qq邮箱：448335044@qq.com</p>
+</div>
+</body>
+
+
+
+</html>
+
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $.ajax({
+
+            type: "GET",
+
+            url: "goods.php",
+
+            dataType: "json",
+
+            success: function(res) {
+
+                console.log(res);
+
+                console.log(typeof(res));
+
+                var data = res.result;
+
+                console.log(data);
+
+                var str = '';
+
+                // 注意：输出的i与obj分别为下标与单个的对象
+
+                $.each(data, function(i, obj) {
+
+                    // console.log(i);
+
+                    // console.log(obj);
+
+                    str += '<div class="inner">';
+
+                    str += '<img src="' + obj.imgUrl + '"/>';
+
+                    str += '<h3>' + '名称：' + obj.name + '</h3>';
+
+                    str += '<span>' + '价格：￥' + obj.price + '</span>';
+
+                    str += '</div>';
+
+                });
+
+                $("#test").append(str);
+
+            }
+
+        });
+
+    });
+
+</script>
